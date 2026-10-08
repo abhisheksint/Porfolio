@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Abhishek S – Software Engineer</title>
+<meta name="description" content="Portfolio of Abhishek S, a Computer Science engineer with experience in software development, web and machine learning.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<style>
+:root{--bg:#eef2f4;--surface:#fff;--ink:#14202b;--muted:#4d5d6b;--line:#cdd7dd;--accent:#3346c9;--accent-ink:#fff;--warm:#d98b1f;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111a22;--surface:#182430;--ink:#e8eef2;--muted:#9fb0bd;--line:#2b3b48;--accent:#8c9bff;--accent-ink:#111a22;--warm:#f0b458}}
+:root[data-theme="dark"]{--bg:#111a22;--surface:#182430;--ink:#e8eef2;--muted:#9fb0bd;--line:#2b3b48;--accent:#8c9bff;--accent-ink:#111a22;--warm:#f0b458}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.65 "IBM Plex Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.1;margin:0;letter-spacing:-.02em}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--warm);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0;gap:16px;flex-wrap:wrap}
+nav .logo{font:800 20px "Bricolage Grotesque",sans-serif;text-decoration:none;color:var(--ink)}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+nav ul a{color:var(--muted);text-decoration:none;font-weight:500;font-size:15px}
+nav ul a:hover{color:var(--accent)}
+.hero{padding:56px 0 40px;display:grid;gap:8px}
+.hero h1{font-size:clamp(42px,8vw,92px);font-weight:800;max-width:15ch}
+.hero p.lead{max-width:60ch;color:var(--muted);font-size:19px;margin:20px 0 0}
+.wave{width:100%;height:120px;display:block;margin-top:28px;color:var(--accent)}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:12px 22px;border-radius:8px;font-weight:500;text-decoration:none;border:2px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--accent-ink)}
+.btn.ghost{color:var(--accent)}
+section{padding:64px 0;border-top:1px solid var(--line)}
+section>.wrap>h2{font-size:clamp(30px,5vw,44px);margin-bottom:32px}
+.about{display:grid;grid-template-columns:2fr 1fr;gap:40px}
+.facts{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px;align-self:start}
+.facts dt{font-weight:500;color:var(--muted);font-size:14px}
+.facts dd{margin:0 0 14px;font-weight:500}
+.facts dd:last-child{margin:0}
+.timeline{border-left:3px solid var(--accent);margin-left:6px;padding-left:28px;display:grid;gap:36px}
+.job{position:relative}
+.job::before{content:"";position:absolute;left:-38px;top:8px;width:13px;height:13px;border-radius:50%;background:var(--bg);border:3px solid var(--accent)}
+.job h3{font-size:22px}
+.job .meta{color:var(--muted);font-size:15px;margin:2px 0 10px}
+.job ul{margin:0;padding-left:20px}
+.job li{margin-bottom:6px;max-width:72ch}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.skill{border-left:4px solid var(--warm);padding:2px 0 2px 16px}
+.skill h3{font-size:18px;margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:3px 12px;font-size:14px}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.proj{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:26px;display:flex;flex-direction:column;gap:12px}
+.proj h3{font-size:22px}
+.proj p{margin:0;color:var(--muted)}
+.proj .chips{margin-top:auto}
+.edu{display:grid;gap:18px}
+.edu div{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:14px}
+.edu strong{font-weight:500}
+.edu span{color:var(--muted)}
+.contact p{max-width:52ch;color:var(--muted);margin:0 0 24px;font-size:19px}
+footer{padding:28px 0;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+@media (max-width:720px){.about{grid-template-columns:1fr}body{font-size:16px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="wrap">
+<nav aria-label="Main">
+<a class="logo" href="#top">Abhishek S</a>
+<ul>
+<li><a href="#about">About</a></li><li><a href="#experience">Experience</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#education">Education</a></li><li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+<div class="hero" id="top">
+<h1>Software Engineer</h1>
+<p class="lead">Computer Science engineer from Bengaluru with hands-on experience in software development, web applications and machine learning. I enjoy learning new technologies and turning ideas into reliable, well-built software.</p>
+<svg class="wave" id="wave" viewBox="0 0 1000 120" preserveAspectRatio="none" aria-hidden="true"><path id="w1" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path id="w2" fill="none" stroke="var(--warm)" stroke-width="2" stroke-linecap="round" opacity=".8"/></svg>
+<div class="btns"><a class="btn primary" href="#contact">Get in touch</a><a class="btn ghost" href="#projects">See my projects</a></div>
+</div>
+</header>
+
+<main>
+<section id="about"><div class="wrap">
+<h2>About me</h2>
+<div class="about">
+<div>
+<p>I am a Computer Science engineer with a passion for technology, real-world problem-solving and continuous learning. I am hardworking, dedicated and quick to adapt, and I enjoy collaborating with a team to deliver high-quality results.</p>
+<p>At BEL I built Software Defined Radio applications on Linux, connected distributed components with CORBA, and shipped services in Docker containers. Before that I built web apps with Java and Spring Boot and trained machine learning models in Python.</p>
+<p>I'm looking for my next role as a software engineer, where I can keep working on reliable, well-structured systems with a team.</p>
+</div>
+<dl class="facts">
+<dt>Based in</dt><dd>Bengaluru, India</dd>
+<dt>Education</dt><dd>B.E. Computer Science, VTU (2025)</dd>
+<dt>Most recent role</dt><dd>Graduate Apprentice Trainee, BEL</dd>
+<dt>Languages</dt><dd>English, Hindi, Kannada, Tamil</dd>
+</dl>
+</div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+<h2>Experience</h2>
+<div class="timeline">
+<article class="job">
+<h3>Graduate Apprentice Trainee, Software Development</h3>
+<p class="meta">Bharat Electronics Limited (BEL), Bengaluru · Aug 2025 – Aug 2026</p>
+<ul>
+<li>Contributed to multiple software projects across the SDLC: design, development, testing and integration.</li><li>Developed Software Defined Radio applications (SDR TAC, HMI, RCU) in C++ with a modular, high-performance design.</li>
+<li>Used Docker for containerisation and CORBA for distributed communication between system components.</li>
+<li>Worked on the Frequency Management System (FMS) and PRHP projects, including protocol design, data exchange and OS-level development.</li>
+<li>Managed code with Git.</li>
+</ul>
+</article>
+<article class="job">
+<h3>Full Stack Web Development Intern</h3>
+<p class="meta">Take It Smart (OPC) Pvt Ltd, Bengaluru · Feb 2025 – May 2025</p>
+<ul>
+<li>Built full-stack web applications with HTML, CSS, JavaScript, Java, JDBC, Servlets, JSP, Spring Boot, MySQL and GitHub.</li>
+<li>Gained hands-on experience in both front-end and back-end development and worked collaboratively with real-world tools and best practices.</li>
+</ul>
+</article>
+<article class="job">
+<h3>Machine Learning &amp; Data Science Intern</h3>
+<p class="meta">Karunadu Technologies Pvt Ltd, Bengaluru · Oct 2023 – Nov 2023</p>
+<ul>
+<li>Worked on machine learning and data science with Python and libraries such as Pandas.</li>
+<li>Covered data preprocessing, model building and performance optimisation, contributing to real-world project analysis.</li>
+<li>Strengthened skills in data analysis, ML concepts and model deployment.</li>
+</ul>
+</article>
+</div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<h2>Skills</h2>
+<div class="skills">
+<div class="skill"><h3>Languages</h3><div class="chips"><span>C++</span><span>C</span><span>Java</span><span>Python</span><span>SQL</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span></div></div>
+<div class="skill"><h3>Systems</h3><div class="chips"><span>CORBA</span><span>Multi-threading</span><span>Modular design</span><span>SDLC</span></div></div>
+<div class="skill"><h3>Tools</h3><div class="chips"><span>Docker</span><span>Linux</span><span>Git &amp; GitHub</span><span>VS Code</span><span>IntelliJ IDEA</span><span>Qt Creator</span><span>Power BI</span><span>MS Office</span></div></div>
+<div class="skill"><h3>Web and data</h3><div class="chips"><span>Spring Boot</span><span>MySQL</span><span>OpenCV</span><span>Data visualisation</span></div></div>
+<div class="skill"><h3>Fundamentals</h3><div class="chips"><span>OOP</span><span>Data structures &amp; algorithms</span><span>System integration</span><span>Testing &amp; debugging</span></div></div>
+</div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+<h2>Projects</h2>
+<div class="projects">
+<article class="proj"><h3>Virtual Exam Proctoring System</h3><p>A remote exam monitoring system with shortcut-key detection, student disappearance alerts and offline video recording to protect academic integrity. YOLOv8 handles real-time facial recognition and video analysis, with a Flask backend and MySQL. I designed and built the whole frontend.</p><div class="chips"><span>Python</span><span>Flask</span><span>YOLOv8</span><span>MySQL</span><span>JavaScript</span></div></article>
+<article class="proj"><h3>Signature Recognition</h3><p>A system that identifies and verifies signatures. It cleans images with thresholding and contour detection, extracts shape, size and orientation features, and matches them against stored templates.</p><div class="chips"><span>Python</span><span>OpenCV</span><span>scikit-image</span><span>Pillow</span></div></article>
+<article class="proj"><h3>My Movie Hub</h3><p>A responsive movie information web app with live data from the OMDb API. Search shows rating, cast, box office and plot, and you can save favorites and a watchlist. An AI-powered chatbot answers questions about movies and actors.</p><div class="chips"><span>JavaScript</span><span>OMDb API</span><span>HTML/CSS</span></div></article>
+</div>
+</div></section>
+
+<section id="education"><div class="wrap">
+<h2>Education</h2>
+<div class="edu">
+<div><strong>B.E. in Computer Science &amp; Engineering<br><span>Impact College of Engineering and Applied Sciences, VTU</span></strong><span>Graduated 2025 · CGPA 8.21 / 10</span></div>
+<div><strong>Pre-University Course (PCMC)<br><span>Reva PU College</span></strong><span>83.5%</span></div>
+<div><strong>SSLC<br><span>New Florence Public School</span></strong><span>80.96%</span></div>
+</div>
+</div></section>
+
+<section id="contact"><div class="wrap contact">
+<h2>Let's talk</h2>
+<p>I'm open to software engineering roles. Send me an email and I'll get back to you.</p>
+<div class="btns"><a class="btn primary" href="mailto:abhishekofficialid3@gmail.com">Email me</a><a class="btn ghost" href="https://www.linkedin.com/in/abhishek-s-ind/" target="_blank" rel="noopener">LinkedIn</a></div>
+</div></section>
+</main>
+
+<footer><div class="wrap">© <span id="yr">2026</span> Abhishek S · Bengaluru, India</div></footer>
+
+<script>
+(function(){
+var w1=document.getElementById('w1'),w2=document.getElementById('w2');
+var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function draw(t){
+var a='',b='';
+for(var x=0;x<=1000;x+=8){
+var env=Math.sin(x/1000*Math.PI);
+var carrier=Math.sin(x/9+t*2.2);
+var y1=60-env*(22+16*Math.sin(x/140-t*.9))*carrier;
+var y2=60-env*30*Math.sin(x/70-t*1.1);
+a+=(x?'L':'M')+x+' '+y1.toFixed(1);
+b+=(x?'L':'M')+x+' '+y2.toFixed(1);
+}
+w1.setAttribute('d',a);w2.setAttribute('d',b);
+}
+draw(0);
+if(!reduce){var s=performance.now();(function f(n){draw((n-s)/1000);requestAnimationFrame(f)})(s)}
+document.getElementById('yr').textContent=new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
